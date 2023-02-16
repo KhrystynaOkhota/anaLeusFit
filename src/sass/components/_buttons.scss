@@ -1,0 +1,43 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.btn {
+  position: relative;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Termina', sans-serif;
+
+  padding: 16px 46px;
+  font-weight: 600;
+  font-size: 14px;
+  @include fontSize(12, 14);
+  line-height: 1.1;
+  border: none;
+  @include transition(.4);
+
+  &:focus {
+    outline: none;
+  }
+
+  &-primary {
+    color: $whiteColor;
+    background: linear-gradient(0deg, #FE1646, #FE1646), linear-gradient(180deg, #FFFFFF -71.58%, rgba(255, 255, 255, 0) 100.75%);
+    border-radius: 10px;
+    @include transition(.3);
+
+
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      max-width: 280px;
+    }
+
+    & i {
+      font-size: 9px;
+      @include fontSize(8, 10);
+      margin-left: 6px;
+    }
+  }
+}
+

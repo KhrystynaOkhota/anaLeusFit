@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?b3xmvh');
+  src:  url('fonts/icomoon.eot?b3xmvh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b3xmvh') format('truetype'),
+    url('fonts/icomoon.woff?b3xmvh') format('woff'),
+    url('fonts/icomoon.svg?b3xmvh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e90f";
+  color: #ffde34;
+}
+.icon-arrow-btn:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-arrow_left:before {
+  content: "\e90d";
+  color: #fe1646;
+}
+.icon-arrow_right:before {
+  content: "\e90e";
+  color: #fe1646;
+}
+.icon-facebook .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.icon-facebook .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icon-instagram .path1:before {
+  content: "\e902";
+  color: rgb(0, 0, 0);
+}
+.icon-instagram .path2:before {
+  content: "\e903";
+  margin-left: -1.0224609375em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icon-instagram .path3:before {
+  content: "\e904";
+  margin-left: -1.0224609375em;
+  color: rgb(65, 62, 73);
+}
+.icon-instagram .path4:before {
+  content: "\e905";
+  margin-left: -1.0224609375em;
+  color: rgb(65, 62, 73);
+}
+.icon-message .path1:before {
+  content: "\e906";
+  color: rgb(0, 0, 0);
+}
+.icon-message .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icon-youtube .path1:before {
+  content: "\e908";
+  color: rgb(0, 0, 0);
+}
+.icon-youtube .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icon-youtube .path3:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-youtube .path4:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}

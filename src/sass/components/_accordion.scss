@@ -1,0 +1,58 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.accordion {
+  padding-top: 8px;
+
+  &-item {
+    padding: 0;
+
+    background: $whiteColor;
+    overflow: hidden;
+
+    &:not(&:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__header {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      color: $accentColor;
+
+      & img {
+        width: 9px;
+        object-fit: contain;
+        margin-left: 4px;
+        @include transition(.4)
+      }
+    }
+
+    &__body {
+      display: none;
+
+      &-inner {
+        margin: 10px 0 0 0;
+        padding: 0 0 15px 0;
+        color: $primaryColor;
+        position: relative;
+        @include fontSize(14, 16);
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+
+.active {
+  & .accordion-item__header {
+    & img {
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
+  }
+}

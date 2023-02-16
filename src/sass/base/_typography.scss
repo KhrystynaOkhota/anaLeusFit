@@ -1,0 +1,56 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.text {
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-left {
+    text-align: left;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  &-m {
+    font-weight: 500;
+    @include fontSize(12,16);
+    line-height: 169.5%;
+    color: $whiteColor;
+  }
+  &-l{
+    font-weight: 700;
+    @include fontSize(18, 40);
+    line-height: 1;
+    color: $whiteColor;
+  }
+  &-xl{
+    font-weight: 700;
+    @include fontSize(35, 120);
+    line-height: 1;
+    color: $whiteColor;
+  }
+}
+
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Termina', sans-serif;
+}
+
+.icon-star:before {
+  content: "\e90f";
+}
+.icon-arrow-btn:before {
+  content: "\e90c";
+}
+.icon-arrow_left:before {
+  content: "\e90d";
+}
+.icon-arrow_right:before {
+  content: "\e90e";
+}
